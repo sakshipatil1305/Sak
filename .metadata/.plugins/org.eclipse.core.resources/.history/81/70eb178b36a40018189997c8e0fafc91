@@ -1,0 +1,62 @@
+<%@page import="com.pojo.Employee"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<%
+		List<Employee> list = (List<Employee>) request.getAttribute("employee");
+	%>
+
+	<table border="1" style="color: olive; font-style: italic; font-family: cursive ; border-spacing: 100 cm;">
+		<thead align="center">
+			<%
+				out.println("Details");
+			%>
+		</thead>
+		<tr>
+
+			<td>
+				<%
+					out.println("EmpID");
+				%>
+			</td>
+			<td>
+				<%
+					out.println("Name");
+				%>
+			</td>
+			<td>
+				<%
+					out.println("Salary");
+				%>
+			</td>
+		</tr>
+		<%
+			for (Employee emp : list) {
+		%>
+		<tr>
+			<td>
+				<%
+					out.println(emp.getEmpid());
+				%>
+			</td>
+			<td>
+				<%
+					out.println(emp.getName());
+				%>
+			</td>
+			<td><%=emp.getSalary()%></td>
+		</tr>
+		<%
+			}
+		%>
+	</table>
+</body>
+</html>

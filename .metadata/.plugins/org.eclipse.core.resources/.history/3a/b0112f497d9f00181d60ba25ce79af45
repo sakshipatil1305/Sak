@@ -1,0 +1,32 @@
+package com.connection;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DemoFetchData {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Connection con = MyConnection.getMyConnection();
+		String Find_All_EMPLOYEE1 = "select * from employee1";
+		try {
+			Statement statement = con.createStatement();
+			ResultSet set = statement.executeQuery(Find_All_EMPLOYEE1);
+			while(set.next())
+			{
+				int empid=set.getInt(1);
+				String name=set.getString(1);
+				int salary=set.getInt(1);
+				System.out.println(empid+" "+name+" "+salary);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

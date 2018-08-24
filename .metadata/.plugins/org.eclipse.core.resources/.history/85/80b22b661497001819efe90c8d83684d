@@ -1,0 +1,19 @@
+package com.pojo;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student<Object> p;
+		p= new Student<Object>();
+		p.display();
+
+	Scanner s=new Scanner(System.in);
+	
+	
+	System.out.println("enter");
+	String name=s.next();
+}
+}

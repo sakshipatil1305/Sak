@@ -1,0 +1,11 @@
+package com.dao;
+
+import com.beans.Book;
+
+public interface BookDAO {
+	
+	public boolean addBook(Book book);
+	int 
+	
+
+}

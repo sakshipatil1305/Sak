@@ -1,0 +1,17 @@
+package com.pojo;
+
+import java.util.Scanner;
+
+public class Shape {
+	
+	public static void main(String[] args) {
+		
+	
+	
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter Shape type");
+		String name=s.next();
+		System.out.println("no. of dimensions");
+		int d=s.nextInt();
+
+}}

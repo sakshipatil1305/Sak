@@ -1,0 +1,27 @@
+package com.pojo;
+
+import java.util.Scanner;
+
+public class Shape {
+	
+	public Shape(String name, int dimensions) {
+		// TODO Auto-generated constructor stub
+		
+		this.name=name;
+		this.dimensions=dimensions;
+	}
+
+	public static void main(String[] args) {
+		
+		String name;
+		int dimensions;
+	
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter Shape type");
+		String n=s.next();
+		System.out.println("no. of dimensions");
+		int d=s.nextInt();
+		
+		Shape s1= new Shape(name,dimensions);
+
+}}

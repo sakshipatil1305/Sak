@@ -1,0 +1,15 @@
+package com.connection;
+
+import java.sql.Connection;
+
+public class DemoFetchData {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Connection con=MyConnection.getMyConnection();
+		
+
+	}
+
+}

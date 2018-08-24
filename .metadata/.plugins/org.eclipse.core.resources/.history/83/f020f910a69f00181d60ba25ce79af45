@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+		boolean condition = true;
+		do {
+			System.out.println("Menu");
+			System.out.println("1 Add book");
+			System.out.println("2 Update book");
+			System.out.println("3 Display all books");
+			System.out.println("4 Find books by name");
+			System.out.println("5 Find Books by Author Name");
+			System.out.println("6 Find books by ISBN");
+			System.out.println("7 Exit");
+			
+			System.out.println("Choose from above: ");
+			int choose=Integer.parseInt()
+		} while (condition);
+	}
+}

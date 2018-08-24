@@ -1,0 +1,27 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.connections.MyConnection;
+import com.pojo.Employee;
+
+public class EmployeeDAO {
+	
+	public List<Employee> findAllEmployees(){
+		Connection com= MyConnection.getMyConnection();
+		
+		
+		String SELECT_ALL ="select * from employee";
+		Statement st =com.createStatement();
+		ResultSet set=st.executeQuery(SELECT_ALL);
+		while(set.next()) {
+		List<Employee> employee=new ArrayList<>();
+		employee.setEmpID(set.getInt(1))
+		employee.setName(set.getString(1))
+		}}
+
+}

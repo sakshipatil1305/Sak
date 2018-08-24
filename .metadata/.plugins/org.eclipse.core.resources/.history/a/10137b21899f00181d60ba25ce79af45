@@ -1,0 +1,19 @@
+import java.util.List;
+
+import com.pojo.Employee;
+
+public class AnotherTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EmployeeDAO dao=new EmployeeDAO();
+		List<Employee> emp= dao.findAllEmployee();
+		for(Employee emp: employee)
+		{
+			System.out.println(emp.getName());
+		}
+
+	}
+
+}
